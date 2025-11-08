@@ -8,17 +8,11 @@ import { fileURLToPath } from "url";
 
 dotenv.config();
 
-// ... other imports
-import { fileURLToPath } from "url";
-
-dotenv.config();
-
-// --- ⬇️ ADD THIS LINE ⬇️ ---
+// --- ⬇️ IT GOES RIGHT HERE ⬇️ ---
 console.log("DEBUG: My MONGODB_URI variable is:", process.env.MONGODB_URI);
+// --- ⬆️ IT GOES RIGHT HERE ⬆️ ---
 
 const __filename = fileURLToPath(import.meta.url);
-// ... rest of your file
-
 const __dirname = path.dirname(__filename);
 
 const MONGODB_URI = process.env.MONGODB_URI;
@@ -59,7 +53,7 @@ Endpoints:
 
 // ✅ SEARCH ENDPOINT — only matches brand_name starting with search text
 app.get("/api/search", async (req, res) => {
-  try {.
+  try {
     const q = (req.query.q || "").trim();
     const page = Math.max(0, parseInt(req.query.page || "0"));
     const size = Math.min(200, Math.max(1, parseInt(req.query.size || "20")));
