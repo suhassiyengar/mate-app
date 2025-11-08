@@ -8,14 +8,22 @@ import { fileURLToPath } from "url";
 
 dotenv.config();
 
+// ... other imports
+import { fileURLToPath } from "url";
+
+dotenv.config();
+
+// --- ⬇️ ADD THIS LINE ⬇️ ---
+console.log("DEBUG: My MONGODB_URI variable is:", process.env.MONGODB_URI);
+
 const __filename = fileURLToPath(import.meta.url);
+// ... rest of your file
+
 const __dirname = path.dirname(__filename);
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const DB_NAME = process.env.DB_NAME || "meddb";
 const COLLECTION = process.env.COLLECTION || "medicines";
-// PORT is no longer needed here, Vercel handles it.
-// const PORT = process.env.PORT || 3000; 
 
 if (!MONGODB_URI) {
   console.error("Set MONGODB_URI in .env");
@@ -51,7 +59,7 @@ Endpoints:
 
 // ✅ SEARCH ENDPOINT — only matches brand_name starting with search text
 app.get("/api/search", async (req, res) => {
-  try {
+  try {.
     const q = (req.query.q || "").trim();
     const page = Math.max(0, parseInt(req.query.page || "0"));
     const size = Math.min(200, Math.max(1, parseInt(req.query.size || "20")));
@@ -139,13 +147,4 @@ app.get("/api/medicines/:id/alternatives", async (req, res) => {
   }
 });
 
-// 
-// --- REMOVED THIS BLOCK ---
-//
-// app.listen(PORT, () => {
-//   console.log(`Proxy server running on http://localhost:${PORT}`);
-// });
-//
-// --- ADDED THIS LINE ---
-//
 export default app;
