@@ -1,24 +1,8 @@
-# mate-app
-
-A lightweight front-end web app (HTML + JavaScript) — deployed to Vercel.  
-Live demo: mate-app-inky.vercel.app. 
-
----
-
 
 ## About
+In a world where healthcare costs can be a significant burden, we believe finding affordable medicine shouldn't be a luxury. Access to transparent pricing and clear options is a right, not a privilege. This belief is the foundation of mate, a platform born from a desire to empower consumers and bring clarity to the often-confusing pharmaceutical market. We saw a simple problem—high medicine prices and a lack of easy-to-find alternatives—and we knew technology could be the solution.
 
-`mate-app` is a small web application built primarily with HTML and JavaScript. The repository includes a `vercel.json` and Node package files which enable easy deployment to Vercel. The project is focused on a static / client-first experience with some JS logic for UI/UX.
-
----
-
-## Features
-
-- Fast static front-end (HTML + vanilla JS).  
-- Simple build / deploy configuration for Vercel.  
-- Small dependency footprint (see `package.json`).
-
----
+This website is more than just an assignment; it's a testament to our passion for problem-solving. We built it using a modern, efficient technology stack:
 
 ## Tech stack
 
@@ -28,8 +12,8 @@ Live demo: mate-app-inky.vercel.app.
 - Css
 - Express Js
 - Mongo DB Atlas
-- 
 
+  
 
 
 ---
