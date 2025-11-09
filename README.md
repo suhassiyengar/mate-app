@@ -25,6 +25,10 @@ Live demo: mate-app-inky.vercel.app.
 - HTML (majority of code)  
 - JavaScript  
 - Vercel for hosting / deployment
+- Css
+- Express Js
+- Mongo DB Atlas
+- 
 
 
 
