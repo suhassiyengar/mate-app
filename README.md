@@ -1,7 +1,7 @@
 # mate-app
 
 A lightweight front-end web app (HTML + JavaScript) — deployed to Vercel.  
-Live demo: **mate-app-inky.vercel.app**. 
+Live demo: mate-app-inky.vercel.app. 
 
 ---
 
